@@ -1,0 +1,10 @@
+Date: 2025-09-18
+Prompt: Describe a challenge you faced
+Response: Appling Abstraction to you
+
+
+Date: 2025-09-18
+Prompt: What did you learn today
+Response: Abstraction
+
+
