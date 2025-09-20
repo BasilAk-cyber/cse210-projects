@@ -48,6 +48,9 @@ class Program
 
         if (grade ==  "A+") {
             grade = "A";
+        }else if (grade == "F+" || grade == "F-" )
+        {
+            grade = "F";
         }
 
 
