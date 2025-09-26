@@ -6,11 +6,8 @@ class Program
     {
         Journal journal = new Journal();
 
-        string[] prompts = {
-            "What was the best part of your day? ",
-            "What did you learn today",
-            "Describe a challenge you faced"
-        };
+        PromptGenerator promptGenerator = new PromptGenerator();
+
         bool isRunning = true;
 
         while (isRunning)
@@ -29,8 +26,7 @@ class Program
             switch (choice)
             {
                 case "1":
-                    Random rand = new Random();
-                    string prompt = prompts[rand.Next(prompts.Length)];
+                    string prompt = promptGenerator.GetRandomPrompt();
                     Console.WriteLine($"Prompt: {prompt}");
                     Console.Write("Your Response: ");
                     String response = Console.ReadLine();
@@ -44,7 +40,7 @@ class Program
                     }
                     else
                     {
-                        journal.DisplayJournal();
+                        journal.DisplayAll();
                     }
 
                     break;
@@ -54,7 +50,9 @@ class Program
                     journal.SaveToFile(filename);
                     break;
                 case "4":
-
+                    Console.Write("Enter a filename: ");
+                    string file = Console.ReadLine();
+                    journal.LoadFromFile(file);
                     break;
                 case "5":
                     return;
