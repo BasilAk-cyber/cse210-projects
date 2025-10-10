@@ -6,10 +6,10 @@ public class Resume
 
     public List<Job> _jobs;
 
-    /* public Resume()
+    public Resume()
     {
         _jobs = new List<Job>();
-    } */
+    }
 
 
     public void Display()
