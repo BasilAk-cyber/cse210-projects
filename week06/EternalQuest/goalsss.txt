@@ -1,0 +1,4 @@
+0
+SimpleGoal:Read my book,Always read everyday,100,False
+EternalGoal:Raed the scriptures,Always read my bible,200,0
+ChecklistGoal:Give a talk,Talk,200,300,500000,0
